@@ -13,7 +13,7 @@ const ShopStack = () => {
                     return {
                         header: () => <Header title={
                             route.name === "Home" ?
-                                "Bienvenido" 
+                                "Aksaya Studio" 
                             : 
                                 route.name === "Products" ?
                                     route.params.category

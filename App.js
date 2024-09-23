@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { useFonts } from 'expo-font'
 import { fonts } from './src/global/fonts'
 import { colors } from './src/global/colors'
@@ -10,9 +10,8 @@ import { init } from './src/db'
 
 export default function App() {
 
-  
   init()
-  
+
   const [fontLoaded] = useFonts(fonts)
 
   if(!fontLoaded){
@@ -22,11 +21,18 @@ export default function App() {
   return (
     <>
       <Provider store={store}>
-        <MainNavigator/>
+        <View style={styles.container}>
+          <MainNavigator/>
+        </View>
       </Provider>
       <StatusBar style="light" backgroundColor={colors.green3} />
     </>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#24242', // Fondo de toda la app
+  },
+})

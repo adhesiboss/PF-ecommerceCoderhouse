@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 25,
     fontFamily: 'Josefin',
+    color: 'white',
   },
   logout: {
     position: 'absolute',
