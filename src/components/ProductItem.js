@@ -1,5 +1,4 @@
 import { Image, Pressable, StyleSheet, Text, useWindowDimensions} from 'react-native'
-import { colors } from '../global/colors'
 import { useNavigation } from '@react-navigation/native'
 
 const ProductItem = ({product}) => {
@@ -9,7 +8,8 @@ const ProductItem = ({product}) => {
 
   return (
     <Pressable style={styles.container} onPress={()=>navigation.navigate("Detail",{id:product.id})}>
-      <Text style={[styles.title,width < 300 ? styles.titleMin: styles.titleMax]}>{product.title}</Text>
+      <Text style={[styles.title,width < 300 ? styles.titleMin: styles.titleMax]} numberOfLines={2}>{product.category} {product.title}</Text>
+      
       <Image
         style={styles.image}
         resizeMode='cover'
@@ -23,24 +23,39 @@ export default ProductItem
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:colors.green1,
+        backgroundColor:"#ffffff",
         marginVertical:10,
         flexDirection:"row",
-        alignItems:"center",
-        padding:10,
-        width:"90%",
-        marginHorizontal:"5%",
         gap:10,
-        borderRadius:3
+        paddingHorizontal:15,
+        marginTop: 20,
+        width: "80%",
+        marginHorizontal: "10%",
+        borderRadius: 8,
+        padding: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 8,
+        elevation: 5,
     },
+    category:{
+      width:"70%",
+      lineHeight:32,
+      fontSize:14,
+  },
     title:{
-        width:"70%"
+        width:"70%",
+        lineHeight:32,
+        fontWeight:"bold",
     },
     titleMin:{
       fontSize:14
     },
     titleMax:{
-      fontSize:20
+      fontSize:18
     },
     image:{
         minWidth:80,

@@ -6,10 +6,10 @@ const TabBarIcon = ({text,icon,focused}) => {
     <View style={styles.container}> 
        <Entypo 
         style={styles.icon} 
-        name={icon} size={24} 
-        color={focused ? "white" : "#ffffff88"} 
+        name={icon} size={20} 
+        color={focused ? "#ffffff" : "#ffffff88"} 
        />
-       <Text style={{color:focused ? "white" : "#ffffff88"}}>{text}</Text>
+       <Text style={{color:focused ? "#ffffff" : "#ffffff88"}}>{text}</Text>
     </View>
   )
 }
@@ -18,6 +18,7 @@ export default TabBarIcon
 
 const styles = StyleSheet.create({
     container:{
+      paddingTop:15,
         alignItems:"center",
         gap:5
     }

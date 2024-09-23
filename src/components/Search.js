@@ -72,9 +72,10 @@ const styles = StyleSheet.create({
         backgroundColor:colors.green3,
         paddingVertical:5,
         paddingHorizontal:10,
-        borderRadius:3,
-        width:"75%",
-        color:"white"
+        borderRadius:8,
+        width:"70%",
+        color:"white",
+        height:40
     },
     buttonContainer:{
         flexDirection:"row"

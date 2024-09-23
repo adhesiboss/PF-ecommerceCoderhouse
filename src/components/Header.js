@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View, StatusBar, Platform, SafeAreaView } from 'react-native';
+import { Pressable, StyleSheet, Text, View, StatusBar, Platform, SafeAreaView, Image } from 'react-native';
 import { colors } from '../global/colors';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { deleteSession } from '../db';
@@ -17,10 +17,15 @@ const Header = ({ title }) => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
+        <Image 
+          source={require('../../assets/logotipo.png')} 
+          style={styles.logo} 
+          resizeMode="contain"
+        />
         <Text style={styles.text}>{title}</Text>
         {idToken && (
           <Pressable onPress={onLogout} style={styles.logout}>
-            <AntDesign name="logout" size={30} color="black" />
+            <AntDesign name="login" size={25} color="white" />
           </Pressable>
         )}
       </View>
@@ -44,6 +49,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
+  },
+  logo: {
+    width: 70, // Ajusta el tamaño del icono según sea necesario
+    height: 70,
+    position: 'absolute',
+    left: 15, // Ajusta la posición según la estructura del header
   },
   text: {
     fontSize: 25,

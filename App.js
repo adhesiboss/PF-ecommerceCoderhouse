@@ -33,6 +33,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#24242', // Fondo de toda la app
+    backgroundColor: '#242424', // Fondo de toda la app
   },
 })

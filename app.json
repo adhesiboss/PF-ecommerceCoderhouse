@@ -8,7 +8,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#242424"
     },
     "ios": {
       "supportsTablet": true
@@ -16,9 +16,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#242424"
       },
-      "package": "com.maxirosanda.ecommerceCoderhouse"
+      "package": "PF-ecommerceCoderhouse"
     },
     "web": {
       "favicon": "./assets/favicon.png"
