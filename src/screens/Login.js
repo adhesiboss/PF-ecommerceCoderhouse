@@ -106,11 +106,12 @@ const styles = StyleSheet.create({
       },
       sub:{
         fontSize:14,
-        fontFamily:"Josefin"
+        fontFamily:"Josefin",
+        color:"grey"
       },
       subLink:{
         fontSize:14,
         fontFamily:"Josefin",
-        color:"blue"
+        color:"white"
       }
 })

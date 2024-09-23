@@ -108,7 +108,8 @@ const styles = StyleSheet.create({
         borderRadius:10,
         justifyContent:"center",
         alignItems:"center",
-        paddingVertical:20
+        paddingVertical:20,
+        color: "white"
       },
       title:{
         fontSize:22,
@@ -116,11 +117,12 @@ const styles = StyleSheet.create({
       },
       sub:{
         fontSize:14,
-        fontFamily:"Josefin"
+        fontFamily:"Josefin",
+        color:"grey"
       },
       subLink:{
         fontSize:14,
         fontFamily:"Josefin",
-        color:"blue"
+        color:"white"
       }
 })

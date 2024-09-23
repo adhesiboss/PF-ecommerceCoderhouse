@@ -34,9 +34,9 @@ const Cart = ({navigation}) => {
       />
       <View style={styles.containerConfirm}>
         <Pressable onPress={handleAddOrder}>
-          <Text style={styles.textConfirm}>Confirmar</Text>
+          <Text style={styles.textConfirm}>Confirmar Pedido</Text>
         </Pressable>
-        <Text style={styles.textConfirm}>Total: {cart.total} $</Text>
+        <Text style={styles.textConfirm}>Total: ${cart.total}</Text>
       </View>
     </View>
   )
@@ -50,13 +50,18 @@ const styles = StyleSheet.create({
         flex:1
     },
     containerConfirm:{
-        backgroundColor:colors.green2,
-        padding:20,
+      backgroundColor:"grey",
+      padding:20,
         flexDirection:"row",
-        justifyContent:"space-between"
+        justifyContent:"space-between",
+        borderStartEndRadius:15,
+        borderTopStartRadius:15
+
     },
     textConfirm:{
         color:"white",
-        fontSize:20
+        fontSize:20,
+        padding:10,
+        borderRadius:10
     }
 })
