@@ -98,3 +98,6 @@ Si deseas contribuir a este proyecto:
 ## Licencia
 
 Este proyecto es privado y no se encuentra bajo ninguna licencia pública. Si estás interesado en su uso, por favor, contacta con el equipo de Aksaya Studio.
+
+![Aksaya Studio Imagen](https://firebasestorage.googleapis.com/v0/b/pf-ecommercecoderhouse.appspot.com/o/plan3.jpg?alt=media&token=699830d5-4c6a-4416-b885-690a13939e35)
+
