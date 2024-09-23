@@ -28,8 +28,16 @@ const ItemListCategories = ({route}) => {
    
   }
 
-  if(isLoading) return <LoadingSpinner/>
-  if(isError) return <View><Text>{error.message}</Text></View>
+  if(isLoading) {
+    console.log("Cargando productos...");
+    return <LoadingSpinner/>
+  }
+  
+  if (isError) {
+  console.log("Error al cargar productos:", error); // Esto debería mostrar el error completo
+  return <View><Text>{error?.message || "Error desconocido"}</Text></View>; // Muestra un mensaje más amigable
+}
+  
 
   return (
     <View style={styles.container}>
