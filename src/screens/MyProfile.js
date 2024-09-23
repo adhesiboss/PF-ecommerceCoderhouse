@@ -29,7 +29,7 @@ const MyProfile = ({navigation}) => {
         <FlatList
           data={user.locations}
           keyExtractor={item => item.id}
-          renderItem={({item})=> <View><Text>{item.address}</Text></View>}
+          renderItem={({item})=> <View ><Text style={styles.address}>- {item.address}</Text></View>}
         />
     </View>
   )
@@ -45,6 +45,17 @@ const styles = StyleSheet.create({
     },
     image:{
         width:150,
-        height:150
+        height:150,
+        borderRadius:100,
+        borderWidth:3,
+        borderColor:"grey"
+    },
+    address:{
+        fontSize:14,
+        textAlign:"left",
+        marginBottom:10,
+        padding:10,
+        fontWeight:"bold",
+
     }
 })
