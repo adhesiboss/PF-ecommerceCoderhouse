@@ -1,3 +1,4 @@
+![Aksaya Studio Logo](https://firebasestorage.googleapis.com/v0/b/pf-ecommercecoderhouse.appspot.com/o/logotipo.png?alt=media&token=07866664-9f11-4fa7-8308-39a1d9fcbe7f)
 
 # Aksaya Studio - Ecommerce de Yoga
 
