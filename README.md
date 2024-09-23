@@ -1,5 +1,4 @@
-# Crear un archivo README.md con el contenido generado
-content = """
+
 # Aksaya Studio - Ecommerce de Yoga
 
 **Versión**: 1.0.0  
@@ -39,3 +38,62 @@ Sigue estos pasos para instalar y correr el proyecto en tu entorno local:
 ```bash
 git clone https://github.com/tu-usuario/aksaya-studio-ecommerce.git
 cd aksaya-studio-ecommerce
+```
+
+### 2. Instalar dependencias
+
+Asegúrate de tener [Node.js](https://nodejs.org/) y [Expo CLI](https://docs.expo.dev/get-started/installation/) instalados.
+
+```bash
+npm install
+```
+
+### 3. Ejecutar la aplicación
+
+Puedes ejecutar la aplicación en las plataformas soportadas:
+
+```bash
+npm run start    # Iniciar la aplicación en Expo
+npm run android  # Correr en un emulador o dispositivo Android
+npm run ios      # Correr en un emulador o dispositivo iOS
+npm run web      # Correr en un navegador web
+```
+
+## Estructura del proyecto
+
+```plaintext
+├── expo/
+├── src/
+│   ├── components/       # Componentes reutilizables de la app
+│   ├── features/         # Funcionalidades y slices de Redux
+│   ├── services/         # Servicios externos como Firebase
+│   ├── global/           # Variables y estilos globales
+│   ├── validations/      # Esquemas de validación (Yup)
+│   └── db/               # Operaciones con la base de datos local (SQLite)
+├── App.js                # Componente principal de la app
+├── package.json          # Dependencias y scripts del proyecto
+└── README.md             # Documentación del proyecto
+```
+
+## Dependencias clave
+
+- **expo**: ^51.0.32
+- **react-native**: ^0.74.5
+- **redux-toolkit**: ^2.2.7
+- **firebase**: ^10.13.2
+- **expo-sqlite**: ^14.0.6
+- **yup**: ^1.4.0
+
+## Contribución
+
+Si deseas contribuir a este proyecto:
+
+1. Haz un fork del proyecto.
+2. Crea una nueva rama con tus cambios: `git checkout -b mi-nueva-funcionalidad`.
+3. Haz commit de tus cambios: `git commit -m 'Agrega nueva funcionalidad'`.
+4. Haz push de tus cambios: `git push origin mi-nueva-funcionalidad`.
+5. Abre un pull request.
+
+## Licencia
+
+Este proyecto es privado y no se encuentra bajo ninguna licencia pública. Si estás interesado en su uso, por favor, contacta con el equipo de Aksaya Studio.
