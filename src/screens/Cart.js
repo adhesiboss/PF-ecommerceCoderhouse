@@ -24,7 +24,7 @@ const Cart = ({navigation}) => {
     navigation.navigate("OrdersStack")
 
   }
-  if(cart.total === 0) return <View><Text>vacio</Text></View>
+  if(cart.total === 0) return <View><Text style={styles.empty}>Carrito Vacio, agrega algún Plan</Text></View>
   return (
     <View style={styles.container}>
       <FlatList
@@ -63,5 +63,12 @@ const styles = StyleSheet.create({
         fontSize:20,
         padding:10,
         borderRadius:10
+    },
+    empty:{
+      fontSize:20,
+      fontFamily:"Josefin",
+      color:"grey",
+      textAlign:"center",
+      marginTop:20
     }
 })

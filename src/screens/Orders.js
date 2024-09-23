@@ -13,7 +13,7 @@ const Orders = () => {
 
   if(isLoading) return <LoadingSpinner/>
 
-  if(orders.length === 0) return <View><Text>vacio</Text></View>
+  if(orders.length === 0) return <View><Text style={styles.empty}>Pedidos Vacio, agrega alguno</Text></View>
   return (
     <View>
       <FlatList
@@ -27,4 +27,31 @@ const Orders = () => {
 
 export default Orders
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container:{
+      justifyContent:"space-between",
+      flex:1
+  },
+  containerConfirm:{
+    backgroundColor:"grey",
+    padding:20,
+      flexDirection:"row",
+      justifyContent:"space-between",
+      borderStartEndRadius:15,
+      borderTopStartRadius:15
+
+  },
+  textConfirm:{
+      color:"white",
+      fontSize:20,
+      padding:10,
+      borderRadius:10
+  },
+  empty:{
+    fontSize:20,
+    fontFamily:"Josefin",
+    color:"grey",
+    textAlign:"center",
+    marginTop:20
+  }
+})
